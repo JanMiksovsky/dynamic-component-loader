@@ -3,10 +3,13 @@ import { Component, OnInit } from '@angular/core';
 import { AdService }         from './ad.service';
 import { AdItem }            from './ad-item';
 
+import 'elix/src/AutosizeTextarea.js';
+
+
 @Component({
   selector: 'app-root',
   template: `
-   <div>
+    <div>
       <elix-autosize-textarea minimum-rows="2" placeholder="Type all you want here!"></elix-autosize-textarea>
       <app-ad-banner [ads]="ads"></app-ad-banner>
     </div>
